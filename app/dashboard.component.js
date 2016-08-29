@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var hero_service_1 = require('./hero.service');
+require('rxjs/add/operator/debounceTime');
+require('rxjs/add/operator/map');
 var DashboardComponent = (function () {
     function DashboardComponent(router, heroService) {
         this.router = router;
